@@ -313,7 +313,7 @@ function resultYesSystems(A, b, x) {
         if (math.isFraction(value)) value = value.valueOf(); // Convert to decimal if fraction
         if (Number.isInteger(value)) return value.toString(); // Return integers as is
 
-        return value.toFixed(3); // Fallback to decimal representation
+        return value.toFixed(6); // Fallback to decimal representation
     };
 
     // Function to format the matrix with the helper function
