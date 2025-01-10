@@ -94,7 +94,7 @@ function formatValue(value) {
         return `√${sqr}`; // Represent as square root symbol if close to integer
     }
 
-    return value.toFixed(3); // Fallback to decimal representation
+    return value.toFixed(6); // Fallback to decimal representation
 }
 
 function CholeskyDekom(A) {
@@ -184,7 +184,7 @@ function resultYesCholeskyDecomp(L, A) {
             return `√${sqr}`; // Represent as square root symbol if close to integer
         }
 
-        return value.toFixed(3); // Fallback to decimal representation
+        return value.toFixed(6); // Fallback to decimal representation
     };
 
     // Function to format the matrix with the helper function
