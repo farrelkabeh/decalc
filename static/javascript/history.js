@@ -134,7 +134,7 @@ function historyCholeskyDecomp(L, A) {
             return `√${sqr}`; // Represent as square root symbol if close to integer
         }
 
-        return value.toFixed(3); // Fallback to decimal representation
+        return value.toFixed(6); // Fallback to decimal representation
     };
 
     // Function to create a table for a given matrix
@@ -216,7 +216,7 @@ function historyDeterminant(A) {
         if (math.isFraction(value)) value = value.valueOf(); // Convert to decimal if fraction
         if (Number.isInteger(value)) return value.toString(); // Return integers as is
 
-        return value.toFixed(3); // Fallback to decimal representation
+        return value.toFixed(6); // Fallback to decimal representation
     };
 
     // Function to create a table for a given matrix
@@ -248,7 +248,7 @@ function historyDeterminant(A) {
 
     // Bold and red determinant
     const redBoldText = document.createElement('span');
-    redBoldText.textContent = Number.isInteger(determinant) ? determinant.toString() : determinant.toFixed(3);
+    redBoldText.textContent = Number.isInteger(determinant) ? determinant.toString() : determinant.toFixed(6);
     redBoldText.style.fontWeight = 'bold'; // Make the text bold
     redBoldText.style.color = 'red'; // Set the text color to red
 
@@ -300,7 +300,7 @@ function historySystems(A, b, x) {
         if (math.isFraction(value)) value = value.valueOf(); // Convert to decimal if fraction
         if (Number.isInteger(value)) return value.toString(); // Return integers as is
 
-        return value.toFixed(3); // Fallback to decimal representation
+        return value.toFixed(6); // Fallback to decimal representation
     };
 
     // Function to create a table for a given matrix/vector
