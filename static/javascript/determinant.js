@@ -172,7 +172,7 @@ function resultYesDeterminant(A) {
     const redBoldText = document.createElement('div');
     redBoldText.textContent = Number.isInteger(determinantResult) 
         ? determinantResult.toString() // Display as integer if it's a whole number
-        : determinantResult.toFixed(3); // Otherwise, display with 3 decimal places
+        : determinantResult.toFixed(6); // Otherwise, display with 6 decimal places
     redBoldText.style.fontWeight = 'bold'; // Make the text bold
     redBoldText.style.color = 'red'; // Set the text color to red
 
